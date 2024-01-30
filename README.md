@@ -3,7 +3,7 @@
 
 ## Module 00
 
----ŞŞŞŞ
+---
 
 
 | Sütun 1 Başlık | Sütun 2 Başlık |
@@ -12,5 +12,5 @@
 
 
 
-[Bağlantı Metni]([http://link.com](https://github.com/astrolil0))
+[Bağlantı Metni]((https://github.com/astrolil0))
 ![Resim Açıklaması](http://image.com/image.jpg)
