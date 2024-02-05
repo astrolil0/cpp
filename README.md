@@ -5,4 +5,4 @@
 *cpp projects I did at school*
 
 ### Module 00
-The program is designed in C++ using classes and objects. The commands received from the user (ADD, SEARCH, EXIT) are the basic operation of the program that directs the flow of user inputs. Makefile, *.cpp, *.{h, hpp} files are used for organizing. These files ensure that the code is neatly organized and maintainable.
+The program is designed in C++ using classes and objects. The commands received from the user (ADD, SEARCH, EXIT) are the basic operation of the program that directs the flow of user inputs. Makefile, hpp files are used for organizing. These files ensure that the code is neatly organized and maintainable.
