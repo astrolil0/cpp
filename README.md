@@ -5,5 +5,4 @@
 *cpp projects I did at school*
 
 ### Module 00
-This project focuses on understanding and applying the basic concepts of Object Oriented Programming (OOP). The program is designed in C++ language using classes and objects. User input is the main interaction point of the program. Commands received from the user (ADD, SEARCH, EXIT) trigger basic functions that direct the flow of the program. User input is processed appropriately for usefulness and correctness. File operations are used to organize the Makefile, *.cpp, *.{h, hpp} files while maintaining the modular structure of the program. These files ensure that the code is neatly organized and maintainable.
-
+The program is designed in C++ using classes and objects. The commands received from the user (ADD, SEARCH, EXIT) are the basic operation of the program that directs the flow of user inputs. Makefile, *.cpp, *.{h, hpp} files are used for organizing. These files ensure that the code is neatly organized and maintainable.
