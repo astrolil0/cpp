@@ -16,10 +16,7 @@ class Contant
     std::string phone_id;
     std::string surname;
 
-    public:
-    // void setInfo();
-	// void printInfo();
-    std::string name3_ret();
+    std::string name_ret();
     std::string surname_ret();
     std::string number_id_ret();
     std::string double_secret_ret();

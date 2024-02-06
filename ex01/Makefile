@@ -20,7 +20,7 @@ COLOUR_RED=\033[1;31m
 
 all : $(NAME)
 
-$(NAME) : $(OBJ_FILE) Contact.hpp  PhoneBook.hpp 
+$(NAME) : $(OBJ_FILE) contact.hpp  phoneBook.hpp 
 	@c++ -std=c++98 $(FLAGS) $(FILE) -o $(NAME)
 	@echo "$(COLOUR_GREEN)--->[mandatory part successfully created ✅]<---"
 	

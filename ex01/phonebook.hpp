@@ -1,5 +1,5 @@
-#ifndef PHONEBOOK_CLASS_H
-# define PHONEBOOK_CLASS_H 
+#ifndef PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
 # define RESET			"\033[0m"
 # define BLACK			"\033[30m"				/* Black */
@@ -23,7 +23,7 @@ class PhoneBook
 {
     private:
         int phonecontant
-        Contant contant[8];
+        Contant contans[8];
 
     public:
         PhoneBook(void)

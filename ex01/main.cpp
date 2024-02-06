@@ -1,6 +1,17 @@
 #include "PhoneBook.hpp"
 #include <iostream>
 
+std::string thisexit(void)
+{
+    std::string put;
+    std::cout << std::endl;
+    std::cout << RED << "-------- PHONEBOOK ------" << RESET << std::endl;
+    std::cout << RED << "-------- Please enter: ADD, SEARCH or EXIT ------" << RESET << std::endl;
+    std::getline(std::cin, put); 
+    return put;
+}
+
+
 int main(void)
 {
     PhoneBook phonebook;
@@ -12,19 +23,15 @@ int main(void)
     }
     while(1)
     {
-        std::cout << BOLDYELLOW << "Enter your command: " << RESET;
-        std::getline(std::cin, put);
-        std::cout << "\033[1;36mthis is the best phone in the world\033[0m" << std::endl;
-        if (!getline(std::cin, put))
-        break;
-        if(put == "ADD")
+        put = thisexit();
+        if(put == "EXIT")
+        return 0;
+        else if(put == "ADD")
         phonebook.add_control();
         else if(put == "SEARCH")
         phonebook.search_conrtol();
 		else
-        {
-              std::cout << RED << "Please enter: ADD, SEARCH or EXIT" << RESET << std::endl;
-        }
+              std::cout << RED << "-------- Invalid input  ------" << RESET << std::endl;
     }
     return (EXIT_SUCCESS);
 }
@@ -64,3 +71,33 @@ int main(void)
 // 	}
 // 	return (0);
 // }
+
+
+int main(void)
+{
+    PhoneBook phonebook;
+    std::string put;
+    if(ac != 1)
+    {
+         std::cout << BOLDMAGENTA << "error : number of arguments incorrect " << RESET <<  std::endl;
+         return (EXIT_FAILURE);
+    }
+    while(1)
+    {
+        put = thisexit();
+        if(put == EXIT)
+        return 0;
+        std::cout << BOLDYELLOW << "Enter your command: " << RESET;
+        std::getline(std::cin, put);
+        std::cout << "\033[1;36mthis is the best phone in the world\033[0m" << std::endl;
+        if (!getline(std::cin, put))
+        break;
+        else if(put == "ADD")
+        phonebook.add_control();
+        else if(put == "SEARCH")
+        phonebook.search_conrtol();
+		else
+              std::cout << RED << "-------- Invalid input  ------" << RESET << std::endl;
+    }
+
+    
