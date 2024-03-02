@@ -1,7 +1,8 @@
 #include "Zombie.hpp"
 
-Zombie* newZombie( std::string name )
+Zombie* newZombie( string name )
 {
-	Zombie *zom = new Zombie(name);
-	return (zom);
+	Zombie *zombie = new Zombie(name);
+	return (zombie);
+	delete zombie;
 }

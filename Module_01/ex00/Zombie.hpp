@@ -2,27 +2,23 @@
 #define ZOMBIE_HPP
 #include <iostream>
 
+#define cout std::cout
+#define string std::string
+
 class Zombie
 {
 	private:
-		std::string Name;
-		
+		string Name;
 	public:
-		Zombie(std::string name); //yapıcı
-		~Zombie(); //yıkıcı Zombie nesnesi yok edildiğinde cagrılır bellekten silindiğinde
-		void announce( void ); //duyuru atmamızı sağlar 
+		Zombie(string name);
+		~Zombie();
+		void announce( void );
+		Zombie* newZombie( string name );
+		void randomChump( string name );
 
 };
 
-Zombie* newZombie( std::string name ); 
-void randomChump( std::string name );
+Zombie* newZombie( string name );
+void randomChump( string name );
 
 #endif
-
-
-
-//dinamil bellek yönetimi = new bellekte alan rezerve eder 
-//delete rezerve edilen yer kalkar 
-//kullanılmayan pointerlara null ataması yapılır 
-//int* p = new int;    int türünde bir bellek bloğu tahsis et
-//int türünde bir bellek bloğu tahsis eder ve bu bloğun adresini p adlı işaretçiye atar
